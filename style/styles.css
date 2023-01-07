@@ -21,32 +21,80 @@ nav ul li a {
   color: white;
   text-decoration: none;
 }
+
+header {
+  position: relative;
+}
+
 .logo {
+  float: left;
   width: 120px;
   height: 120px;
-  padding-top: 20px;
+  padding-left: 15px;
+  margin-top: -10px;
 }
 
 .name {
-  text-align: center;
-  padding-top: 20px;
-  color: white;
+  width: 150px;
+  padding: 20px 50%;
+}
+
+main {
+  padding: 70px 100px;
+  margin: 10px 50px;
 }
 
 .logo-background {
-  text-align: center;
   background-color: rgba(0, 0, 255, 0.577);
-  height: 90px;
+  height: 100px;
 }
 
-.logo {
-  width: 120px;
-  height: 120px;
-  margin-top: -150px;
-  padding-left: 15px;
+li {
+  list-style: none;
 }
 
-.h2-title {
-  margin-left: 200px;
-  margin-top: 20px;
+section {
+  margin: 10px;
+}
+
+.box {
+  border: 1px solid;
+  width: 320px;
+  border-radius: 5px;
+}
+
+.box-title {
+  text-align: center;
+  padding: 10px 0px;
+  background-color: rgba(0, 0, 255, 0.577);
+}
+
+ul li {
+  padding-left: 10px;
+}
+
+.box1 {
+  height: 200px;
+}
+
+.box2 {
+  margin-left: 350px;
+  border: 1px solid;
+  width: 320px;
+  border-radius: 5px;
+}
+
+.b2-content {
+  padding: 10px;
+}
+
+.box3 {
+  margin-left: 350px;
+  border: 1px solid;
+  width: 320px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: rgba(0, 0, 255, 0.577);
 }
