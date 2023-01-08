@@ -6,7 +6,7 @@
 nav {
   background-color: black;
   width: 100%;
-  height: 40px;
+  height: auto;
   padding-top: 10px;
   text-align: right;
 }
@@ -85,8 +85,23 @@ section {
 
 .box-title {
   text-align: center;
-  padding: 10px 0px;
+  padding: 10px;
   background-color: rgba(0, 0, 255, 0.577);
+  font-size: x-large;
+}
+
+.box-title1 {
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 255, 0.577);
+  font-size: x-large;
+}
+
+.box-title2 {
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 255, 0.577);
+  font-size: x-large;
 }
 
 ul li {
@@ -94,23 +109,23 @@ ul li {
 }
 
 .box1 {
-  height: 200px;
+  height: 170px;
 }
 
 .box2 {
   margin-left: 350px;
-  margin-top: -210px;
-  height: 80px;
+  margin-top: -180px;
+  height: auto;
 }
 
 .b2-content {
   padding: 10px;
-  height: 20px;
+  height: auto;
 }
 
 .box3 {
   margin-left: 350px;
-  height: 100px;
+  height: auto;
 }
 
 footer {
@@ -133,7 +148,32 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  body {
-    grid-template-columns: 1fr;
+  nav,
+  footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  nav {
+    height: auto;
+  }
+
+  body main {
+    flex-direction: column;
+  }
+
+  .box-title1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .home-title {
+    flex-direction: column;
+  }
+
+  nav a {
+    display: block;
+    padding: 15px;
+  }
+
+  .name {
+    height: auto fit-content;
   }
 }
