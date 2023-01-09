@@ -6,7 +6,7 @@
 nav {
   background-color: black;
   width: 100%;
-  height: auto;
+  height: 40px;
   padding-top: 10px;
   text-align: right;
 }
@@ -26,16 +26,17 @@ nav ul li a {
   padding-bottom: 15px;
 }
 
-header {
-  position: relative;
-}
-
 .logo {
   float: left;
   width: 120px;
   height: 120px;
   padding-left: 15px;
   margin-top: -10px;
+}
+
+.logo-background {
+  background-color: rgba(0, 0, 255, 0.577);
+  height: 100px;
 }
 
 .name {
@@ -46,8 +47,10 @@ header {
 
 main {
   width: 760px;
-  padding: 50px 20px;
+  padding: 50px 10px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .dark {
@@ -57,75 +60,31 @@ main {
   cursor: pointer;
 }
 
-.logo-background {
-  background-color: rgba(0, 0, 255, 0.577);
-  height: 100px;
-}
-
 li {
   list-style: none;
 }
 
 section {
   margin: 10px;
+  margin-top: 40px;
 }
 
-.box {
+.card {
+  width: 400px;
+  text-align: center;
+  font-size: x-large;
   border: 1px solid;
-  width: 320px;
   border-radius: 5px;
 }
 
-.box-main {
-  border: 1px solid;
-  width: 320px;
-  border-radius: 5px;
-  padding-bottom: 2px;
-}
-
-.box-title {
-  text-align: center;
-  padding: 10px;
+h3 {
   background-color: rgba(0, 0, 255, 0.577);
-  font-size: x-large;
-}
-
-.box-title1 {
-  text-align: center;
-  padding: 10px;
-  background-color: rgba(0, 0, 255, 0.577);
-  font-size: x-large;
-}
-
-.box-title2 {
-  text-align: center;
-  padding: 10px;
-  background-color: rgba(0, 0, 255, 0.577);
-  font-size: x-large;
+  background-size: cover;
+  border-bottom: 1px solid;
 }
 
 ul li {
-  padding-left: 10px;
-}
-
-.box1 {
-  height: 170px;
-}
-
-.box2 {
-  margin-left: 350px;
-  margin-top: -180px;
-  height: auto;
-}
-
-.b2-content {
-  padding: 10px;
-  height: auto;
-}
-
-.box3 {
-  margin-left: 350px;
-  height: auto;
+  text-align: left;
 }
 
 footer {
@@ -147,33 +106,12 @@ footer {
   border-radius: 5px;
 }
 
-@media screen and (max-width: 600px) {
-  nav,
-  footer {
-    grid-template-columns: repeat(1, 1fr);
-  }
+@media only screen and (min-width: 38rem) {
   nav {
-    height: auto;
+    flex-direction: row-reverse;
   }
 
-  body main {
-    flex-direction: column;
-  }
-
-  .box-title1 {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .home-title {
-    flex-direction: column;
-  }
-
-  nav a {
-    display: block;
-    padding: 15px;
-  }
-
-  .name {
-    height: auto fit-content;
+  main {
+    grid-template-columns: 1fr 1fr;
   }
 }
