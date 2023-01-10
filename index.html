@@ -11,9 +11,16 @@
     />
     <meta name="author" content="Aldi Sulaj" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/base.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap"
+      rel="stylesheet"
     />
     <title>WDD 230 - Portal - Aldi Sulaj</title>
   </head>
@@ -33,40 +40,39 @@
     </header>
     <main>
       <h2 class="h2-title">WDD 230: Course Activity Portal</h2>
-      <hr width="700px" />
-      <section class="card">
-        <div class="card1">
-          <h3 class="box-title">Learning Activities</h3>
-          <ul>
-            <li>
-              Week 01: <a href="#">Grail</a> | <a href="#">Media Query</a>
-            </li>
-            <li>Week 02:</li>
-            <li>Week 03:</li>
-            <li>Week 04:</li>
-            <li>Week 05:</li>
-            <li>Week 06:</li>
-          </ul>
-        </div>
-      </section>
-      <section class="card">
-        <h3 class="box-title1">Project</h3>
-        <a class="b2-content" href="#">Timbuktu Chamber of Commerce</a>
-      </section>
-      <section class="card">
-        <h3 class="box-title2">Information</h3>
-        <p>76f - Sunshine</p>
-        <p>Visit Count: 15</p>
-      </section>
+      <hr width="auto" />
+      <div class="allcards">
+        <section class="card">
+          <div class="card1">
+            <h3 class="box-title">Learning Activities</h3>
+            <ul>
+              <li>
+                Week 01: <a href="#">Grail</a> | <a href="#">Media Query</a>
+              </li>
+              <li>Week 02:</li>
+              <li>Week 03:</li>
+              <li>Week 04:</li>
+              <li>Week 05:</li>
+              <li>Week 06:</li>
+            </ul>
+          </div>
+        </section>
+        <section class="card">
+          <h3 class="box-title1">Project</h3>
+          <a class="b2-content" href="#">Timbuktu Chamber of Commerce</a>
+        </section>
+        <section class="card">
+          <h3 class="box-title2">Information</h3>
+          <p>76f - Sunshine</p>
+          <p>Visit Count: 15</p>
+        </section>
+      </div>
     </main>
     <footer>
       <div>
         <p class="footer-text">
           &copy;
           <span id="year"></span>
-          <script>
-            document.write(new Date().getFullYear());
-          </script>
           Aldi Sulaj Albania
           <img class="flag" src="image/Flag_of_Albania.svg.png" alt="Albania" />
         </p>
