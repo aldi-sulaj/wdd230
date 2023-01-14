@@ -1,0 +1,14 @@
+/* Color palette:  
+    primary: 1e385c
+    secondary: 27565b
+    background: f1faee
+
+    text: fff with primary and secondary colors, 000 with other colors
+    buttons will have the primary color, hover effects can be in the secondary color
+
+    wireframe: https://wireframe.cc/dS3GnU
+*/
+
+* {
+  font-family: "Roboto", sans-serif;
+}
