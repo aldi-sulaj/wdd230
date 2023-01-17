@@ -8,25 +8,26 @@
 
     there will be one font (Roboto) for the entire website
 
-    wireframe: https://wireframe.cc/dS3GnU
+    Large wireframe: https://wireframe.cc/dS3GnU
+    Small wireframe: https://wireframe.cc/tSCdbj
 */
 
 * {
   font-family: "Roboto", sans-serif;
 }
 
-.title{
+.title {
   background-color: #f1faee;
   text-align: center;
 }
 
-.more-button{
+.more-button {
   background-color: #1e385c;
   color: #fff;
   width: 100px;
   height: 50px;
 }
 
-.more-button:hover{
+.more-button:hover {
   background-color: #27565b;
 }
