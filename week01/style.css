@@ -6,9 +6,27 @@
     text: fff with primary and secondary colors, 000 with other colors
     buttons will have the primary color, hover effects can be in the secondary color
 
+    there will be one font (Roboto) for the entire website
+
     wireframe: https://wireframe.cc/dS3GnU
 */
 
 * {
   font-family: "Roboto", sans-serif;
+}
+
+.title{
+  background-color: #f1faee;
+  text-align: center;
+}
+
+.more-button{
+  background-color: #1e385c;
+  color: #fff;
+  width: 100px;
+  height: 50px;
+}
+
+.more-button:hover{
+  background-color: #27565b;
 }
