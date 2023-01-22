@@ -15,10 +15,29 @@
 }
 
 @media only screen and (max-width: 38rem) {
+  nav {
+    position: absolute;
+    top: 55px;
+    right: 5px;
+    width: auto;
+  }
+
+  nav .open {
+    display: block;
+  }
+
+  nav li {
+    list-style: none;
+  }
+
+  nav a {
+    padding: 0;
+  }
+
   nav ul {
     display: flex;
     flex-direction: column-reverse;
-    gap: 8px;
+    gap: 5px;
   }
 
   nav ul li {
