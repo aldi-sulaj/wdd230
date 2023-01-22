@@ -16,31 +16,46 @@
 
 @media only screen and (max-width: 38rem) {
   nav {
+    display: none;
     position: absolute;
     top: 55px;
     right: 5px;
     width: auto;
   }
 
-  nav .open {
+  .name {
+    margin-left: -30px;
+  }
+
+  header button {
     display: block;
+    margin: auto;
   }
 
-  nav li {
-    list-style: none;
-  }
-
-  nav a {
-    padding: 0;
+  .name {
+    align-content: center;
   }
 
   nav ul {
     display: flex;
     flex-direction: column-reverse;
-    gap: 5px;
+    gap: 10px;
   }
 
   nav ul li {
     text-align: center;
+    list-style: none;
+  }
+
+  nav ul li a {
+    padding: 2px;
+  }
+
+  button::before {
+    content: "\2630";
+  }
+
+  button.open::before {
+    content: "\2715";
   }
 }
